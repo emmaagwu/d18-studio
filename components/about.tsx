@@ -51,8 +51,8 @@ export default function About() {
                 and efficient products that helps puts money in your pocket while enjoying what we know how to do best.
               </p>
               <p className="text-black text-base md:text-lg leading-relaxed">
-                We're not here just to make money from you. We're here to make money with you. You're more than a
-                client. You're a collaborator!
+                We&apos;re not here just to make money from you. We&apos;re here to make money with you. You&apos;re more than a
+                client. You&apos;re a collaborator!
               </p>
             </div>
 
