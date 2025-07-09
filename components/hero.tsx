@@ -22,20 +22,35 @@ export default function Hero() {
 
         {/* Video/Showcase Section */}
         <div className="mt-16 md:mt-24">
-          <div className="relative bg-gray-100 rounded-lg overflow-hidden shadow-lg">
-            <video
-              className="w-full h-auto"
-              autoPlay
-              muted
-              loop
-              playsInline
-              controls={false}
-              // poster="/video-poster.jpg" // Optional: thumbnail image
+          <div className="flex justify-center">
+            <div
+              className="relative bg-gray-100 rounded-lg overflow-hidden shadow-lg"
+              style={{
+                width: "min(802px, calc(100vw - 32px))",
+                height: "min(539.49px, calc((100vw - 32px) * 0.673))",
+                padding: "14px 12px",
+                gap: "6.22px",
+                opacity: 1,
+              }}
             >
-              <source src="/videos/hero-video.mp4" type="video/mp4" />
-              {/* <source src="/videos/hero-video.webm" type="video/webm" /> */}
-              Your browser does not support the video tag.
-            </video>
+              <video
+                className="w-full h-full object-cover rounded"
+                autoPlay
+                muted
+                loop
+                playsInline
+                controls={false}
+                poster="/video-poster.jpg"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                }}
+              >
+                <source src="/videos/hero-video.mp4" type="video/mp4" />
+                <source src="/videos/hero-video.webm" type="video/webm" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
           </div>
         </div>
       </div>
