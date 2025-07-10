@@ -1,58 +1,6 @@
-// import ProjectCard from "./project-card"
-
-// export default function Portfolio() {
-//   return (
-//     <section className="w-full bg-white py-16 md:py-24 lg:py-32">
-//       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-//         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
-//           {/* Left Side - Title */}
-//           <div className="flex items-center justify-center lg:justify-start">
-//             <h2 className="font-['Roba_High'] font-black text-[48px] sm:text-[64px] md:text-[80px] lg:text-[96px] leading-[79%] tracking-[-2%] text-black uppercase text-center lg:text-left">
-//               THE ART
-//               <br />
-//               CALLED
-//               <br />
-//               <span style={{ color: "#C8D74B" }}>DESIGN</span>
-//             </h2>
-//           </div>
-
-//           {/* Right Side - First Card */}
-//           <div className="flex justify-center lg:justify-end">
-//             <ProjectCard
-//               title="Wedding Materials Website"
-//               description="Land page design for Onyeka Fabrics"
-//               imageSrc="/placeholder.svg?height=387&width=584"
-//               isVideo={true}
-//               videoSrc="/videos/portfolio-wedding.mp4"
-//             />
-//           </div>
-//         </div>
-
-//         {/* Bottom Row - Two Cards */}
-//         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 mt-16 lg:mt-24">
-//           <div className="flex justify-center">
-//             <ProjectCard
-//               title="Edutech Website"
-//               description="An engaging platform designed to make learning accessible, interactive, and personalized"
-//               imageSrc="/images/edutech.png"
-//             />
-//           </div>
-
-//           <div className="flex justify-center">
-//             <ProjectCard
-//               title="icase Dashboard"
-//               description="icase was built for the Anambra State Legal System. It was later adopted by the Legal System of Enugu State."
-//               imageSrc="/images/icase-dashboard.png"
-//             />
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   )
-// }
-
-
 import ProjectCard from "./project-card"
+import Image from "next/image"
+
 
 export default function Portfolio() {
   return (
@@ -162,6 +110,64 @@ export default function Portfolio() {
             />
           </div>
         </div>
+
+        {/* Single Card with Images */}
+        <div className="mt-12 md:mt-16">
+          {/* Single card that's fully visible on large screens, overflows on smaller screens */}
+          <div className="overflow-x-auto lg:overflow-x-visible">
+            <div className="bg-[#EDEDED] rounded-lg p-6 shadow-sm min-w-[1200px] lg:min-w-0 lg:w-full">
+              <div className="flex gap-6 justify-center lg:justify-center">
+                {/* p1.png */}
+                <div className="w-[200px] rounded-lg overflow-hidden shadow-sm">
+                  <div className="relative h-[400px] w-full">
+                    <Image src={"/images/p1.png"} alt={"Savor The Spinning Satire"} fill className="object-cover object-top" />
+                  </div>
+                </div>
+
+                {/* p2.png */}
+                <div className="w-[200px] rounded-lg overflow-hidden shadow-sm">
+                  <div className="relative h-[400px] w-full">
+                    <Image
+                      src="/images/p2.png"
+                      alt="Thinkers From Around The Globe"
+                      fill
+                      className="object-cover object-top"
+                    />
+                  </div>
+                </div>
+
+                {/* p3.png */}
+                <div className="w-[200px] rounded-lg overflow-hidden shadow-sm">
+                  <div className="relative h-[400px] w-full">
+                    <Image src="/images/p3.png" alt="Scan, Engage & Win" fill className="object-cover object-top" />
+                  </div>
+                </div>
+
+                {/* p4.png */}
+                <div className="w-[40px] rounded-lg overflow-hidden shadow-sm">
+                  <div className="relative h-[400px] w-full">
+                    <Image src="/images/p4.png" alt="Mobile Engagement App" fill className="object-cover object-top" />
+                  </div>
+                </div>
+
+                {/* p5.png */}
+                <div className="w-[160px] rounded-lg overflow-hidden shadow-sm">
+                  <div className="relative h-[400px] w-full">
+                    <Image src="/images/p5.png" alt="Payment Gateway Platform" fill className="object-cover object-top" />
+                  </div>
+                </div>
+
+                {/* p6.png */}
+                <div className="w-[160px] rounded-lg overflow-hidden shadow-sm">
+                  <div className="relative h-[400px] w-full">
+                    <Image src="/images/p6.png" alt="Audience Building Platform" fill className="object-cover object-top" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   )
