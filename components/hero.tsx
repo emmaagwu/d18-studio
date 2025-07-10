@@ -14,7 +14,7 @@ export default function Hero() {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-gray-600 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
+          <p className="text-gray-600 text-xl font-jakarta font-light md:text-base max-w-lg mx-auto leading-relaxed" style={{ color: "#717171", letterSpacing: "-0.06em" }}>
             We help forward-thinking businesses stand out with purposeful design, smart strategy, and stellar creative
             that gets results.
           </p>
@@ -40,14 +40,14 @@ export default function Hero() {
                 loop
                 playsInline
                 controls={false}
-                poster="/video-poster.jpg"
+                // poster="/video-poster.jpg"
                 style={{
                   width: "100%",
                   height: "100%",
                 }}
               >
                 <source src="/videos/hero-video.mp4" type="video/mp4" />
-                <source src="/videos/hero-video.webm" type="video/webm" />
+                {/* <source src="/videos/hero-video.webm" type="video/webm" /> */}
                 Your browser does not support the video tag.
               </video>
             </div>

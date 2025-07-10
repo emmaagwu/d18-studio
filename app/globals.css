@@ -3,34 +3,11 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
-
-/* body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-} */
 
 @theme {
   --font-family-roba-low: "Roba Low", sans-serif;
   --font-family-roba-high: "Roba High", sans-serif;
+  --font-family-plus-jakarta: "Plus Jakarta Sans", sans-serif;
 }
 
 /* === Roba High === */
@@ -193,6 +170,12 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+@layer utilities {
+  .font-jakarta {
+    font-family: var(--font-family-plus-jakarta);
+  }
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -201,4 +184,3 @@
     @apply bg-background text-foreground;
   }
 }
-
