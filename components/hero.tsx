@@ -1,3 +1,6 @@
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
+
 export default function Hero() {
   return (
     <section className="w-full bg-white py-16 md:py-24 lg:py-32">
@@ -14,10 +17,20 @@ export default function Hero() {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-gray-600 text-xl font-jakarta font-light md:text-base max-w-lg mx-auto leading-relaxed" style={{ color: "#717171", letterSpacing: "-0.06em" }}>
+          <p className="text-gray-600 text-xl font-jakarta font-light md:text-base max-w-lg mx-auto leading-relaxed mb-8" style={{ color: "#717171", letterSpacing: "-0.06em" }}>
             We help forward-thinking businesses stand out with purposeful design, smart strategy, and stellar creative
             that gets results.
           </p>
+
+          {/* Mobile Contact Button - Only visible on mobile */}
+          <div className="md:hidden mb-8">
+            <Button
+              asChild
+              className="font-['Roba_Low'] font-semibold bg-black hover:bg-gray-800 text-white px-6 py-3 text-base leading-[116%] tracking-[0%] transition-colors duration-200"
+            >
+              <Link href="#contact">CONTACT US</Link>
+            </Button>
+          </div>
         </div>
 
         {/* Video/Showcase Section */}
