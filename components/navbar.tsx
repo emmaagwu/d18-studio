@@ -103,7 +103,7 @@ export default function Navbar() {
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="text-black hover:text-gray-600"
               >
-                <X className="h-6 w-6 border-2 border-black" />
+                <X className="h-6 w-6 border-1 border-black/50 rounded-sm" />
               </Button>
             </div>
           </div>
