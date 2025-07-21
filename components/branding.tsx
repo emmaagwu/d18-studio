@@ -39,32 +39,32 @@ function BrandingItem({ title, description, imageSrc, imageAlt, reversed = false
 export default function Branding() {
   const brandingProjects = [
     {
-      title: "KINSAGE STUDIO",
-      description:
-        "Brand and logo design for Kinsage Studio, a creative agency focused on marketing. The logo emanates from the name of the company because.",
-      imageSrc: "/images/brand1.png",
-      imageAlt: "Kinsage Studio branding showcase with blue and green design elements",
-    },
-    {
-      title: "CONSONANCE",
-      description:
-        "Brand and logo design for Consonance, an insurance firm. The logo represents firmness and steadiness while looking professional for the company.",
-      imageSrc: "/images/brand2.png",
-      imageAlt: "Consonance insurance company branding with blue corporate design",
-    },
-    {
       title: "WORLDCHANGERS SCHOOL OF SUCCESS & MINISTRY",
       description:
         "Logo design for Worldchangers School of Success and Ministry. The logo was crafted W & M representing Worldchangers and Ministry.",
-      imageSrc: "/images/brand3.png",
+      imageSrc: "/images/brand1.png",
       imageAlt: "Worldchangers School branding with blue and green W&M logo design",
     },
     {
       title: "NEOCREST CONSULT",
       description:
         "Brand design for Neocrest Consult, a consulting firm. The logo represents firmness and steadiness while looking professional for the company.",
-      imageSrc: "/images/brand4.png",
+      imageSrc: "/images/brand2.png",
       imageAlt: "Neocrest Consult branding with yellow and blue design elements",
+    },
+    {
+      title: "KINSAGE STUDIO",
+      description:
+        "Brand and logo design for Kinsage Studio, a creative agency focused on marketing. The logo emanates from the name of the company because.",
+      imageSrc: "/images/brand3.png",
+      imageAlt: "Kinsage Studio branding showcase with blue and green design elements",
+    },
+    {
+      title: "CONSONANCE",
+      description:
+        "Brand and logo design for Consonance, an insurance firm. The logo represents firmness and steadiness while looking professional for the company.",
+      imageSrc: "/images/brand4.png",
+      imageAlt: "Consonance insurance company branding with blue corporate design",
     },
   ]
 
