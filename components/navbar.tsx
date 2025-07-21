@@ -83,7 +83,7 @@ export default function Navbar() {
             {/* Header with Logo and Close Button */}
             <div className="flex items-start justify-between p-6">
               {/* Navigation Items */}
-            <div className="flex flex-col justify-start pt-6 px-6">
+            <div className="flex flex-col justify-start pt-5 px-6">
               <div className="space-y-6">
                 {navigationItems.map((item) => (
                   <Link
@@ -103,7 +103,7 @@ export default function Navbar() {
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="text-black hover:text-gray-600"
               >
-                <X className="h-6 w-6 border-1 border-black/50 rounded-sm" />
+                <X className="h-6 w-6 border-2 border-black/50 rounded-sm" />
               </Button>
             </div>
           </div>
