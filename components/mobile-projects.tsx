@@ -186,7 +186,7 @@ export default function MobileProjects() {
         {/* Quote Text - Only visible on large screens */}
         <div className="hidden lg:block mb-16 xl:mb-20">
           <p className="font-['Plus_Jakarta_Sans'] font-medium italic text-[48px] leading-[107%] tracking-[-2%] text-center text-black">
-            "Design is the silent ambassador of your brand."
+          &quot;Design is the silent ambassador of your brand.&quot;
           </p>
         </div>
 
