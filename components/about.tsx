@@ -136,41 +136,55 @@ export default function About() {
             </div>
           </div>
 
-          {/* Images - Same layout as desktop but scaled for mobile */}
+          {/* Images - Fixed to show full length without cropping */}
           <div className="flex justify-center gap-2 sm:gap-3">
             {/* Image 1 - Stepped Down */}
-            <div className="flex flex-col">
+            <div className="flex flex-col items-center">
               <div className="h-6 sm:h-10"></div>
-              <div className="relative h-32 w-16 sm:h-40 sm:w-20">
+              <div className="w-16 sm:w-20">
                 <Image
                   src="/images/about1.png"
                   alt="Workspace with green wall and flowers"
-                  fill
-                  className="object-cover"
+                  width={80}
+                  height={320}
+                  className="w-full h-auto object-cover"
                 />
               </div>
             </div>
 
             {/* Image 2 - Normal Height */}
-            <div className="relative h-32 w-16 sm:h-40 sm:w-20">
-              <Image src="/images/about2.png" alt="Creative workspace setup" fill className="object-cover" />
+            <div className="w-16 sm:w-20">
+              <Image
+                src="/images/about2.png"
+                alt="Creative workspace setup"
+                width={80}
+                height={320}
+                className="w-full h-auto object-cover"
+              />
             </div>
 
             {/* Image 3 - Stepped Down */}
-            <div className="flex flex-col">
+            <div className="flex flex-col items-center">
               <div className="h-6 sm:h-10"></div>
-              <div className="relative h-32 w-16 sm:h-40 sm:w-20">
-                <Image src="/images/about3.png" alt="Laptop on wooden desk" fill className="object-cover" />
+              <div className="w-16 sm:w-20">
+                <Image
+                  src="/images/about3.png"
+                  alt="Laptop on wooden desk"
+                  width={80}
+                  height={320}
+                  className="w-full h-auto object-cover"
+                />
               </div>
             </div>
 
             {/* Image 4 - Normal Height */}
-            <div className="relative h-32 w-16 sm:h-40 sm:w-20">
+            <div className="w-16 sm:w-20">
               <Image
                 src="/images/about4.png"
                 alt="Office desk with laptop and flowers"
-                fill
-                className="object-cover"
+                width={80}
+                height={320}
+                className="w-full h-auto object-cover"
               />
             </div>
           </div>
