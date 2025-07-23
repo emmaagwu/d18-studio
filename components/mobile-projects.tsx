@@ -204,11 +204,11 @@ export default function MobileProjects() {
             <h2 className="font-['RobaV0.5_Low_TRIAL'] text-[48px] lg:text-[54px] xl:text-[64px] leading-[80%] tracking-tighter text-black uppercase">
               <span className="font-light tracking-tighter">MOBILE</span>
               <br />
-              <span className="font-black tracking-tighter">ISN'T A</span>
+              <span className="font-black tracking-tighter">ISN&apos;T A</span>
               <br />
               <span className="font-black tracking-tighter">DEVICE,</span>
               <br />
-              <span className="font-black tracking-tighter">IT'S A</span>
+              <span className="font-black tracking-tighter">IT&apos;S A</span>
               <br />
               <span
                 className="inline-block font-black text-[#C8D74B] text-[85%]"
@@ -243,11 +243,11 @@ export default function MobileProjects() {
               <h2 className="font-['RobaV0.5_Low_TRIAL'] text-[24px] sm:text-[32px] leading-[80%] tracking-[-2%] text-black uppercase text-center">
                 <span className="font-light">MOBILE</span>
                 <br />
-                <span className="font-black">ISN'T A</span>
+                <span className="font-black">ISN&apos;T A</span>
                 <br />
                 <span className="font-black">DEVICE,</span>
                 <br />
-                <span className="font-black">IT'S A</span>
+                <span className="font-black">IT&apos;S A</span>
                 <br />
                 <span className="font-black" style={{ color: "#C8D74B" }}>
                   LIFESTYLE
