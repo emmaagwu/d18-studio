@@ -31,13 +31,20 @@
 //   ]
 
 //   return (
-//     <section className="w-full bg-white py-16 md:py-24 lg:py-32">
+//     <section className="w-full bg-white py-16 md:py-24 lg:py-28">
 //       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+//         {/* Quote Text - Only visible on large screens */}
+//         <div className="hidden lg:block mb-16 xl:mb-20">
+//           <p className="font-['Plus_Jakarta_Sans'] font-normal italic text-[48px] leading-[107%] tracking-[-2%] text-center text-black">
+//           &quot;Design is the silent ambassador of your brand.&quot;
+//           </p>
+//         </div>
+
 //         {/* Large and Medium Screens Layout - 4 Column Grid */}
 //         <div className="hidden md:grid md:grid-cols-4 gap-4 lg:gap-6 items-start">
 //           {/* Column 1 - Text */}
-//           <div className="flex flex-col justify-start">
-//             <h2 className="font-['RobaV0.5_Low_TRIAL'] text-[48px] lg:text-[64px] xl:text-[80px] 2xl:text-[96px] leading-[80%] tracking-[-2%] text-black uppercase">
+//           {/* <div className="flex flex-col justify-start max-w-[300px]">
+//             <h2 className="font-['RobaV0.5_Low_TRIAL'] text-[48px] lg:text-[54px] xl:text-[64px] leading-[80%] tracking-[-2%] text-black uppercase  border-2 border-amber-200">
 //               <span className="font-light">MOBILE</span>
 //               <br />
 //               <span className="font-black">ISN&apos;T A</span>
@@ -47,10 +54,30 @@
 //               <span className="font-black">IT&apos;S A</span>
 //               <br />
 //               <span className="font-black" style={{ color: "#C8D74B" }}>
+//                   LIFESTYLE
+//               </span>
+//             </h2>
+//           </div> */}
+//           <div className="flex flex-col justify-start max-w-[300px]">
+//             <h2 className="font-['RobaV0.5_Low_TRIAL'] text-[48px] lg:text-[54px] xl:text-[64px] leading-[80%] tracking-tighter text-black uppercase">
+//               <span className="font-light tracking-tighter">MOBILE</span>
+//               <br />
+//               <span className="font-black tracking-tighter">ISN'T A</span>
+//               <br />
+//               <span className="font-black tracking-tighter">DEVICE,</span>
+//               <br />
+//               <span className="font-black tracking-tighter">IT'S A</span>
+//               <br />
+//               <span
+//                 className="inline-block font-black text-[#C8D74B] text-[85%]"
+//                 style={{ letterSpacing: "-0.085em" }}
+//               >
 //                 LIFESTYLE
 //               </span>
 //             </h2>
 //           </div>
+
+
 
 //           {/* Column 2 - Card 1 (Video) */}
 //           <div className="flex justify-center">
@@ -68,79 +95,57 @@
 //           </div>
 //         </div>
 
-//         {/* Small Screens Layout - 2x2 Grid */}
-//         <div className="md:hidden grid grid-cols-2 gap-4">
-//           {/* First Row, First Column - Text */}
-//           <div className="flex flex-col justify-start">
-//             <h2 className="font-['RobaV0.5_Low_TRIAL'] text-[24px] sm:text-[32px] leading-[80%] tracking-[-2%] text-black uppercase">
-//               <span className="font-light">MOBILE</span>
-//               <br />
-//               <span className="font-black">ISN&apos;T A</span>
-//               <br />
-//               <span className="font-black">DEVICE,</span>
-//               <br />
-//               <span className="font-black">IT&apos;S A</span>
-//               <br />
-//               <span className="font-black" style={{ color: "#C8D74B" }}>
-//                 LIFESTYLE
-//               </span>
-//             </h2>
+//         {/* Mobile Layout - Single Column */}
+//         <div className="md:hidden flex flex-col gap-8">
+//           {/* Mobile Text */}
+//           <div className="flex justify-center">
+//             <div className="max-w-[300px]">
+//               <h2 className="font-['RobaV0.5_Low_TRIAL'] text-[24px] sm:text-[32px] leading-[80%] tracking-[-2%] text-black uppercase text-center">
+//                 <span className="font-light">MOBILE</span>
+//                 <br />
+//                 <span className="font-black">ISN&apos;T A</span>
+//                 <br />
+//                 <span className="font-black">DEVICE,</span>
+//                 <br />
+//                 <span className="font-black">IT&apos;S A</span>
+//                 <br />
+//                 <span className="font-black" style={{ color: "#C8D74B" }}>
+//                   LIFESTYLE
+//                 </span>
+//               </h2>
+//             </div>
 //           </div>
 
-//           {/* First Row, Second Column - Card 1 (Video) */}
+//           {/* Mobile Cards - Single Column */}
 //           <div className="flex justify-center">
 //             <MobileProjectCard isVideo={true} videoSrc="/videos/mobile-app-1.mp4" alt="E-commerce mobile app" />
 //           </div>
 
-//           {/* Second Row, First Column - Card 2 (Image) */}
 //           <div className="flex justify-center">
 //             <MobileProjectCard imageSrc="/images/mobile1.png" alt="Financial mobile app" />
 //           </div>
 
-//           {/* Second Row, Second Column - Card 3 (Video) */}
 //           <div className="flex justify-center">
 //             <MobileProjectCard isVideo={true} videoSrc="/videos/mobile-app-3.mp4" alt="Banking mobile app" />
 //           </div>
+
+//           {/* Mobile App Cards - Single Column */}
+//           {mobileApps.map((app, index) => (
+//             <div key={index} className="flex justify-center">
+//               <MobileAppCard title={app.title} description={app.description} imageSrc={app.imageSrc} />
+//             </div>
+//           ))}
 //         </div>
 
-//         {/* New Mobile App Cards Section */}
-//         <div className="mt-16 md:mt-24 lg:mt-32">
-//           {/* Large and Medium Screens - 2x2 Grid */}
-//           <div className="hidden md:grid md:grid-cols-2 gap-6 lg:gap-8">
+//         {/* New Mobile App Cards Section - Only for desktop */}
+//         <div className="hidden md:block mt-16 md:mt-24 lg:mt-32">
+//           <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
 //             {mobileApps.map((app, index) => (
 //               <div key={index} className="flex justify-center">
 //                 <MobileAppCard title={app.title} description={app.description} imageSrc={app.imageSrc} />
 //               </div>
 //             ))}
 //           </div>
-
-//           {/* Mobile Screens - Horizontal Scroll */}
-//           <div className="md:hidden">
-//             <div
-//               className="flex gap-4 overflow-x-auto pb-4 px-2"
-//               style={{
-//                 scrollbarWidth: "none",
-//                 msOverflowStyle: "none",
-//                 WebkitOverflowScrolling: "touch",
-//               }}
-//             >
-//               {mobileApps.map((app, index) => (
-//                 <div key={index} className="flex-none w-[280px] sm:w-[320px]">
-//                   <MobileAppCard title={app.title} description={app.description} imageSrc={app.imageSrc} />
-//                 </div>
-//               ))}
-//             </div>
-//           </div>
-
-//           <style jsx>{`
-//             .overflow-x-auto::-webkit-scrollbar {
-//               display: none;
-//             }
-//             .overflow-x-auto {
-//               -ms-overflow-style: none;
-//               scrollbar-width: none;
-//             }
-//           `}</style>
 //         </div>
 //       </div>
 //     </section>
@@ -181,12 +186,14 @@ export default function MobileProjects() {
   ]
 
   return (
-    <section className="w-full bg-white py-16 md:py-24 lg:py-32">
+    <section className="w-full bg-white py-16 md:py-24 lg:py-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Quote Text - Only visible on large screens */}
         <div className="hidden lg:block mb-16 xl:mb-20">
-          <p className="font-['Plus_Jakarta_Sans'] font-medium italic text-[48px] leading-[107%] tracking-[-2%] text-center text-black">
-          &quot;Design is the silent ambassador of your brand.&quot;
+          <p className="font-['Plus_Jakarta_Sans'] font-normal italic text-[48px] leading-[107%] tracking-tighter text-center text-black max-w-[550px] mx-auto">
+            &quot;Design is the silent <br />
+            ambassador of your <br />
+            brand.&quot;
           </p>
         </div>
 
@@ -194,16 +201,19 @@ export default function MobileProjects() {
         <div className="hidden md:grid md:grid-cols-4 gap-4 lg:gap-6 items-start">
           {/* Column 1 - Text */}
           <div className="flex flex-col justify-start max-w-[300px]">
-            <h2 className="font-['RobaV0.5_Low_TRIAL'] text-[48px] lg:text-[54px] xl:text-[64px] leading-[80%] tracking-[-2%] text-black uppercase">
-              <span className="font-light">MOBILE</span>
+            <h2 className="font-['RobaV0.5_Low_TRIAL'] text-[48px] lg:text-[54px] xl:text-[64px] leading-[80%] tracking-tighter text-black uppercase">
+              <span className="font-light tracking-tighter">MOBILE</span>
               <br />
-              <span className="font-black">ISN&apos;T A</span>
+              <span className="font-black tracking-tighter">ISN'T A</span>
               <br />
-              <span className="font-black">DEVICE,</span>
+              <span className="font-black tracking-tighter">DEVICE,</span>
               <br />
-              <span className="font-black">IT&apos;S A</span>
+              <span className="font-black tracking-tighter">IT'S A</span>
               <br />
-              <span className="font-black" style={{ color: "#C8D74B" }}>
+              <span
+                className="inline-block font-black text-[#C8D74B] text-[85%]"
+                style={{ letterSpacing: "-0.085em" }}
+              >
                 LIFESTYLE
               </span>
             </h2>
@@ -233,11 +243,11 @@ export default function MobileProjects() {
               <h2 className="font-['RobaV0.5_Low_TRIAL'] text-[24px] sm:text-[32px] leading-[80%] tracking-[-2%] text-black uppercase text-center">
                 <span className="font-light">MOBILE</span>
                 <br />
-                <span className="font-black">ISN&apos;T A</span>
+                <span className="font-black">ISN'T A</span>
                 <br />
                 <span className="font-black">DEVICE,</span>
                 <br />
-                <span className="font-black">IT&apos;S A</span>
+                <span className="font-black">IT'S A</span>
                 <br />
                 <span className="font-black" style={{ color: "#C8D74B" }}>
                   LIFESTYLE
