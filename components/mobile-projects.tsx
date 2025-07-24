@@ -35,38 +35,25 @@
 //       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 //         {/* Quote Text - Only visible on large screens */}
 //         <div className="hidden lg:block mb-16 xl:mb-20">
-//           <p className="font-['Plus_Jakarta_Sans'] font-normal italic text-[48px] leading-[107%] tracking-[-2%] text-center text-black">
-//           &quot;Design is the silent ambassador of your brand.&quot;
+//           <p className="font-['Plus_Jakarta_Sans'] font-normal italic text-[48px] leading-[107%] tracking-tighter text-center text-black max-w-[550px] mx-auto">
+//             &quot;Design is the silent <br />
+//             ambassador of your <br />
+//             brand.&quot;
 //           </p>
 //         </div>
 
 //         {/* Large and Medium Screens Layout - 4 Column Grid */}
 //         <div className="hidden md:grid md:grid-cols-4 gap-4 lg:gap-6 items-start">
 //           {/* Column 1 - Text */}
-//           {/* <div className="flex flex-col justify-start max-w-[300px]">
-//             <h2 className="font-['RobaV0.5_Low_TRIAL'] text-[48px] lg:text-[54px] xl:text-[64px] leading-[80%] tracking-[-2%] text-black uppercase  border-2 border-amber-200">
-//               <span className="font-light">MOBILE</span>
-//               <br />
-//               <span className="font-black">ISN&apos;T A</span>
-//               <br />
-//               <span className="font-black">DEVICE,</span>
-//               <br />
-//               <span className="font-black">IT&apos;S A</span>
-//               <br />
-//               <span className="font-black" style={{ color: "#C8D74B" }}>
-//                   LIFESTYLE
-//               </span>
-//             </h2>
-//           </div> */}
 //           <div className="flex flex-col justify-start max-w-[300px]">
 //             <h2 className="font-['RobaV0.5_Low_TRIAL'] text-[48px] lg:text-[54px] xl:text-[64px] leading-[80%] tracking-tighter text-black uppercase">
 //               <span className="font-light tracking-tighter">MOBILE</span>
 //               <br />
-//               <span className="font-black tracking-tighter">ISN'T A</span>
+//               <span className="font-black tracking-tighter">ISN&apos;T A</span>
 //               <br />
 //               <span className="font-black tracking-tighter">DEVICE,</span>
 //               <br />
-//               <span className="font-black tracking-tighter">IT'S A</span>
+//               <span className="font-black tracking-tighter">IT&apos;S A</span>
 //               <br />
 //               <span
 //                 className="inline-block font-black text-[#C8D74B] text-[85%]"
@@ -77,11 +64,9 @@
 //             </h2>
 //           </div>
 
-
-
 //           {/* Column 2 - Card 1 (Video) */}
 //           <div className="flex justify-center">
-//             <MobileProjectCard isVideo={true} videoSrc="/videos/mobile-app-1.mp4" alt="E-commerce mobile app" />
+//             <MobileProjectCard isVideo={true} videoSrc="/videos/mobile-app-1.mp4" alt="E-commerce mobile app" variant="padded" />
 //           </div>
 
 //           {/* Column 3 - Card 2 (Image) */}
@@ -91,7 +76,7 @@
 
 //           {/* Column 4 - Card 3 (Video) */}
 //           <div className="flex justify-center">
-//             <MobileProjectCard isVideo={true} videoSrc="/videos/mobile-app-3.mp4" alt="Banking mobile app" />
+//             <MobileProjectCard isVideo={true} videoSrc="/videos/mobile-app-1.mp4" alt="Banking mobile app" variant="padded" />
 //           </div>
 //         </div>
 
@@ -118,7 +103,7 @@
 
 //           {/* Mobile Cards - Single Column */}
 //           <div className="flex justify-center">
-//             <MobileProjectCard isVideo={true} videoSrc="/videos/mobile-app-1.mp4" alt="E-commerce mobile app" />
+//             <MobileProjectCard isVideo={true} videoSrc="/videos/mobile-app-1.mp4" alt="E-commerce mobile app" variant="padded" />
 //           </div>
 
 //           <div className="flex justify-center">
@@ -126,7 +111,7 @@
 //           </div>
 
 //           <div className="flex justify-center">
-//             <MobileProjectCard isVideo={true} videoSrc="/videos/mobile-app-3.mp4" alt="Banking mobile app" />
+//             <MobileProjectCard isVideo={true} videoSrc="/videos/mobile-app-1.mp4" alt="Banking mobile app" variant="padded" />
 //           </div>
 
 //           {/* Mobile App Cards - Single Column */}
@@ -219,19 +204,19 @@ export default function MobileProjects() {
             </h2>
           </div>
 
-          {/* Column 2 - Card 1 (Video) */}
+          {/* Column 2 - Card 1 (Video with container) */}
           <div className="flex justify-center">
-            <MobileProjectCard isVideo={true} videoSrc="/videos/mobile-app-1.mp4" alt="E-commerce mobile app" variant="padded" />
+            <MobileProjectCard isVideo={true} videoSrc="/videos/mobile-app-1.mp4" alt="E-commerce mobile app" />
           </div>
 
-          {/* Column 3 - Card 2 (Image) */}
+          {/* Column 3 - Card 2 (Image with no container) */}
           <div className="flex justify-center">
             <MobileProjectCard imageSrc="/images/mobile1.png" alt="Financial mobile app" />
           </div>
 
-          {/* Column 4 - Card 3 (Video) */}
+          {/* Column 4 - Card 3 (Video with container) */}
           <div className="flex justify-center">
-            <MobileProjectCard isVideo={true} videoSrc="/videos/mobile-app-1.mp4" alt="Banking mobile app" variant="padded" />
+            <MobileProjectCard isVideo={true} videoSrc="/videos/mobile-app-1.mp4" alt="Banking mobile app" />
           </div>
         </div>
 
@@ -256,17 +241,13 @@ export default function MobileProjects() {
             </div>
           </div>
 
-          {/* Mobile Cards - Single Column */}
+          {/* Mobile Cards - Single Column (videos have no container on mobile) */}
           <div className="flex justify-center">
-            <MobileProjectCard isVideo={true} videoSrc="/videos/mobile-app-1.mp4" alt="E-commerce mobile app" />
+            <MobileProjectCard isVideo={true} videoSrc="/videos/mobile-app-1.mp4" alt="E-commerce mobile app" isMobile={true} />
           </div>
 
           <div className="flex justify-center">
-            <MobileProjectCard imageSrc="/images/mobile1.png" alt="Financial mobile app" />
-          </div>
-
-          <div className="flex justify-center">
-            <MobileProjectCard isVideo={true} videoSrc="/videos/mobile-app-3.mp4" alt="Banking mobile app" />
+            <MobileProjectCard isVideo={true} videoSrc="/videos/mobile-app-1.mp4" alt="Banking mobile app" isMobile={true} />
           </div>
 
           {/* Mobile App Cards - Single Column */}
