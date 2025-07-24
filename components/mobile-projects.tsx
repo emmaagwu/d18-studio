@@ -221,7 +221,7 @@ export default function MobileProjects() {
 
           {/* Column 2 - Card 1 (Video) */}
           <div className="flex justify-center">
-            <MobileProjectCard isVideo={true} videoSrc="/videos/mobile-app-1.mp4" alt="E-commerce mobile app" />
+            <MobileProjectCard isVideo={true} videoSrc="/videos/mobile-app-1.mp4" alt="E-commerce mobile app" variant="padded" />
           </div>
 
           {/* Column 3 - Card 2 (Image) */}
@@ -231,7 +231,7 @@ export default function MobileProjects() {
 
           {/* Column 4 - Card 3 (Video) */}
           <div className="flex justify-center">
-            <MobileProjectCard isVideo={true} videoSrc="/videos/mobile-app-3.mp4" alt="Banking mobile app" />
+            <MobileProjectCard isVideo={true} videoSrc="/videos/mobile-app-1.mp4" alt="Banking mobile app" variant="padded" />
           </div>
         </div>
 
