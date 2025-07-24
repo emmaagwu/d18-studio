@@ -73,7 +73,7 @@ export default function Branding() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
         <div className="text-center lg:text-left mb-16 lg:mb-24">
-          <h2 className="font-['RobaV0.5_Low_TRIAL'] text-[48px] sm:text-[64px] md:text-[80px] lg:text-[96px] leading-[80px] tracking-[-2%] text-black uppercase">
+          <h2 className="font-['Roba_Low'] text-[48px] sm:text-[64px] md:text-[80px] lg:text-[96px] leading-[80px] tracking-[-2%] text-black uppercase">
             <span className="font-black">GOOD</span>
             <br />
             <span className="font-light">BRANDING</span>
