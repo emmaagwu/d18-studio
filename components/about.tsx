@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function About() {
   return (
-    <section className="w-full py-16 md:py-24 lg:py-32" style={{ backgroundColor: "#C8D74B" }}>
+    <section id='about' className="w-full py-16 md:py-24 lg:py-32" style={{ backgroundColor: "#C8D74B" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
         {/* Desktop Layout */}
         <div className="hidden lg:block">

@@ -2,13 +2,13 @@ import { Facebook, Instagram, Linkedin, Mail, MessageCircle } from "lucide-react
 
 export default function Footer() {
   return (
-    <footer className="w-full py-16 md:py-20 lg:py-24" style={{ backgroundColor: "#E8F4FD" }}>
+    <footer className="w-full py-16 md:py-20 lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Desktop Layout */}
         <div className="hidden md:block">
           {/* Main Heading */}
           <h2
-                className="font-['RobaV0.5_Low_TRIAL'] font-bold text-[48px] lg:text-[64px] uppercase mb-4"
+                className="font-['Roba_Low'] font-bold text-[48px] lg:text-[64px] uppercase mb-4"
                 style={{
                   lineHeight: "85%",
                   letterSpacing: "-2%",
@@ -23,7 +23,7 @@ export default function Footer() {
 
               {/* Subtext */}
               <p
-                className="font-['RobaV0.5_Low_TRIAL'] font-medium text-[28px] lg:text-[36px] mb-12 lg:mb-16"
+                className="font-['Roba_Low'] font-medium text-[28px] lg:text-[36px] mb-12 lg:mb-16"
                 style={{
                   lineHeight: "85%",
                   letterSpacing: "-2%",
@@ -38,7 +38,7 @@ export default function Footer() {
                   <Mail className="w-5 h-5 text-black" />
                   <a
                     href="mailto:D18studioo@gmail.com"
-                    className="font-['RobaV0.5_Low_TRIAL'] font-semibold text-[20px] lg:text-[24px] text-black hover:text-gray-600 transition-colors duration-200"
+                    className="font-['Roba_Low'] font-semibold text-[20px] lg:text-[24px] text-black hover:text-gray-600 transition-colors duration-200"
                     style={{
                       lineHeight: "85%",
                       letterSpacing: "-2%",
@@ -53,7 +53,7 @@ export default function Footer() {
                   <MessageCircle className="w-5 h-5 text-black" />
                   <a
                     href="tel:+2348166918230"
-                    className="font-['RobaV0.5_Low_TRIAL'] font-semibold text-[20px] lg:text-[24px] text-black hover:text-gray-600 transition-colors duration-200"
+                    className="font-['Roba_Low'] font-semibold text-[20px] lg:text-[24px] text-black hover:text-gray-600 transition-colors duration-200"
                     style={{
                       lineHeight: "85%",
                       letterSpacing: "-2%",
@@ -69,28 +69,36 @@ export default function Footer() {
                {/* Social Media Icons */}
               <div className="flex items-end space-x-4">
                 <a
-                  href="#"
+                  href="https://www.facebook.com/share/1DzbqkVGjA/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-8 h-8 flex items-center justify-center text-black hover:text-gray-600 transition-colors duration-200"
                   aria-label="Facebook"
                 >
                   <Facebook className="w-5 h-5" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/d18_studio?igsh=azgyaXhieTR4Ymt6"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-8 h-8 flex items-center justify-center text-black hover:text-gray-600 transition-colors duration-200"
                   aria-label="Instagram"
                 >
                   <Instagram className="w-5 h-5" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/d18-studio/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-8 h-8 flex items-center justify-center text-black hover:text-gray-600 transition-colors duration-200"
                   aria-label="LinkedIn"
                 >
                   <Linkedin className="w-5 h-5" />
                 </a>
                 <a
-                  href="#"
+                  href="https://x.com/D18_Studio?t=GAmHYTwIniHKEF29p0L4ew&s=09"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-8 h-8 flex items-center justify-center text-black hover:text-gray-600 transition-colors duration-200"
                   aria-label="X (Twitter)"
                 >
@@ -124,7 +132,7 @@ export default function Footer() {
           <div className="flex flex-col px-4">
             {/* Main Heading */}
             <h2
-              className="font-['RobaV0.5_Low_TRIAL'] font-bold text-[32px] sm:text-[40px] uppercase mb-3"
+              className="font-['Roba_Low'] font-bold text-[32px] sm:text-[40px] uppercase mb-3"
               style={{
                 lineHeight: "85%",
                 letterSpacing: "-2%",
@@ -136,7 +144,7 @@ export default function Footer() {
 
             {/* Subtext */}
             <p
-              className="font-['RobaV0.5_Low_TRIAL'] font-medium text-[20px] sm:text-[24px] mb-8"
+              className="font-['Roba_Low'] font-medium text-[20px] sm:text-[24px] mb-8"
               style={{
                 lineHeight: "85%",
                 letterSpacing: "-2%",
@@ -153,7 +161,7 @@ export default function Footer() {
                 <Mail className="w-5 h-5 text-black" />
                 <a
                   href="mailto:D18studioo@gmail.com"
-                  className="font-['RobaV0.5_Low_TRIAL'] font-semibold text-[18px] sm:text-[20px] text-black hover:text-gray-600 transition-colors duration-200"
+                  className="font-['Roba_Low'] font-semibold text-[18px] sm:text-[20px] text-black hover:text-gray-600 transition-colors duration-200"
                   style={{
                     lineHeight: "85%",
                     letterSpacing: "-2%",
@@ -168,7 +176,7 @@ export default function Footer() {
                 <MessageCircle className="w-5 h-5 text-black" />
                 <a
                   href="tel:+2348166918230"
-                  className="font-['RobaV0.5_Low_TRIAL'] font-semibold text-[18px] sm:text-[20px] text-black hover:text-gray-600 transition-colors duration-200"
+                  className="font-['Roba_Low'] font-semibold text-[18px] sm:text-[20px] text-black hover:text-gray-600 transition-colors duration-200"
                   style={{
                     lineHeight: "85%",
                     letterSpacing: "-2%",
@@ -182,28 +190,36 @@ export default function Footer() {
             {/* Social Media Icons */}
             <div className="flex justify-start items-center space-x-4 mb-6 ml-[-10px]">
               <a
-                href="#"
+                href="https://www.facebook.com/share/1DzbqkVGjA/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-8 h-8 flex items-center justify-center text-black hover:text-gray-600 transition-colors duration-200"
                 aria-label="Facebook"
               >
                 <Facebook className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/d18_studio?igsh=azgyaXhieTR4Ymt6"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-8 h-8 flex items-center justify-center text-black hover:text-gray-600 transition-colors duration-200"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/company/d18-studio/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-8 h-8 flex items-center justify-center text-black hover:text-gray-600 transition-colors duration-200"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://x.com/D18_Studio?t=GAmHYTwIniHKEF29p0L4ew&s=09"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-8 h-8 flex items-center justify-center text-black hover:text-gray-600 transition-colors duration-200"
                 aria-label="X (Twitter)"
               >
@@ -217,7 +233,7 @@ export default function Footer() {
             <div className="flex items-center space-x-2">
               <span className="text-black text-[18px] sm:text-[20px]">©</span>
               <p
-                className="font-['RobaV0.5_Low_TRIAL'] font-normal text-[18px] sm:text-[20px] text-black"
+                className="font-['Roba_Low'] font-normal text-[18px] sm:text-[20px] text-black"
                 style={{
                   lineHeight: "85%",
                   letterSpacing: "-2%",

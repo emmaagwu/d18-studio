@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export default function Portfolio() {
   return (
-    <section className="w-full bg-white py-16 md:py-24 lg:py-32">
+    <section id='work' className="w-full bg-white py-16 md:py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-2 sm:px-4 md:px-6">
 
         {/* Mobile Layout - Single Column */}

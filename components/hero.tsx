@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 
 export default function Hero() {
   return (
-    <section className="w-full bg-white py-16 md:py-24 lg:py-32">
+    <section className="w-full pt-25 bg-white py-16 md:py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Text */}
         <div className="text-center mb-8">
@@ -28,7 +28,13 @@ export default function Hero() {
               asChild
               className="font-['Roba_Low'] font-semibold bg-black hover:bg-gray-800 text-white px-6 py-3 text-base leading-[116%] tracking-[0%] transition-colors duration-200"
             >
-              <Link href="#contact">CONTACT US</Link>
+              <Link
+                href="https://wa.me/2347039416665?text=Hello%20D18%20Studio!%20I'm%20interested%20in%20learning%20more%20about%20your%20web%20design%20services.%20Could%20you%20please%20provide%20me%20with%20more%20information%20about%20your%20offerings%20and%20how%20we%20can%20work%20together?"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                CONTACT US
+              </Link>
             </Button>
           </div>
         </div>

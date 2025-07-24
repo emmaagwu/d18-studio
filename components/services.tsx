@@ -5,7 +5,7 @@ export default function Services() {
   const services = ["Web Design", "App Design", "Branding & Visual Identity"]
 
   return (
-    <section className="w-full py-16 md:py-24 lg:py-32" style={{ backgroundColor: "#C8D74B" }}>
+    <section id='services' className="w-full py-16 md:py-24 lg:py-32" style={{ backgroundColor: "#C8D74B" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Services Container */}
         <div className="w-full max-w-5xl mx-auto rounded-lg overflow-hidden" style={{ backgroundColor: "#0C570D" }}>
