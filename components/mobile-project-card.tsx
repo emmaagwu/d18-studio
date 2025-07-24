@@ -75,7 +75,6 @@ export default function MobileProjectCard({
   videoSrc,
   isVideo = false,
   alt = "Mobile project",
-  variant = "flush",
   isMobile = false,
 }: MobileProjectCardProps) {
   // Calculate dimensions based on original image ratio (602x1184)
