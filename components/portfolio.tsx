@@ -10,8 +10,8 @@ export default function Portfolio() {
         <div className="block md:hidden space-y-8">
           {/* 1. Title */}
           <div className="flex items-center justify-center">
-            <h2 className="font-['Roba_High'] font-black text-[48px] sm:text-[64px] leading-[79%] tracking-[-2%] text-black uppercase text-center">
-              THE ART
+            <h2 className="font-['Roba_Low'] font-black text-[48px] sm:text-[64px] leading-[79%] tracking-[-2%] text-black uppercase text-center">
+              THE <span className="font-extralight"> ART </span>
               <br />
               CALLED
               <br />
@@ -59,8 +59,8 @@ export default function Portfolio() {
 
           {/* 6. Design Title */}
           <div className="flex items-center justify-center py-4">
-            <h3 className="font-['Roba_High'] font-black text-[32px] sm:text-[48px] leading-[79%] tracking-[-2%] text-black uppercase text-center">
-              DESIGN IS
+            <h3 className="font-['Roba_Low'] font-black text-[32px] sm:text-[48px] leading-[79%] tracking-[-2%] text-black uppercase text-center">
+              <span className="font-light"> DESIGN </span> IS
               <br />
               THINKING
               <br />
@@ -186,8 +186,8 @@ export default function Portfolio() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 items-start">
             {/* Left Side - Title */}
             <div className="flex items-center justify-center md:justify-start">
-              <h2 className="font-['Roba_High'] font-black text-[48px] sm:text-[64px] md:text-[80px] lg:text-[96px] leading-[79%] tracking-[-2%] text-black uppercase text-center md:text-left">
-                THE ART
+              <h2 className="font-['Roba_Low'] font-black text-[48px] sm:text-[64px] md:text-[80px] lg:text-[96px] leading-[79%] tracking-[-2%] text-black uppercase text-center md:text-left">
+              THE <span className="font-extralight"> ART </span>
                 <br />
                 CALLED
                 <br />
@@ -230,8 +230,8 @@ export default function Portfolio() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mt-12 md:mt-16 items-end">
             {/* Left Side - Design Text (aligned to bottom left) */}
             <div className="flex items-end justify-center md:justify-start h-full min-h-[400px] md:min-h-[500px]">
-              <h3 className="font-['Roba_High'] font-black text-[32px] sm:text-[48px] md:text-[64px] lg:text-[80px] leading-[79%] tracking-[-2%] text-black uppercase text-center md:text-left">
-                DESIGN IS
+              <h3 className="font-['Roba_Low'] font-black text-[32px] sm:text-[48px] md:text-[64px] lg:text-[80px] leading-[79%] tracking-[-2%] text-black uppercase text-center md:text-left">
+              <span className="font-light"> DESIGN </span> IS
                 <br />
                 THINKING
                 <br />

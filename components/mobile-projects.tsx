@@ -186,7 +186,7 @@ export default function MobileProjects() {
         <div className="hidden md:grid md:grid-cols-4 gap-4 lg:gap-6 items-start">
           {/* Column 1 - Text */}
           <div className="flex flex-col justify-start max-w-[300px]">
-            <h2 className="font-['RobaV0.5_Low_TRIAL'] text-[48px] lg:text-[54px] xl:text-[64px] leading-[80%] tracking-tighter text-black uppercase">
+            <h2 className="font-['Roba_Low'] font-semibold text-[48px] lg:text-[54px] xl:text-[64px] leading-[80%] tracking-tighter text-black uppercase">
               <span className="font-light tracking-tighter">MOBILE</span>
               <br />
               <span className="font-black tracking-tighter">ISN&apos;T A</span>
@@ -225,12 +225,12 @@ export default function MobileProjects() {
           {/* Mobile Text */}
           <div className="flex justify-center">
             <div className="max-w-[300px]">
-              <h2 className="font-['RobaV0.5_Low_TRIAL'] text-[24px] sm:text-[32px] leading-[80%] tracking-[-2%] text-black uppercase text-center">
-                <span className="font-light">MOBILE</span>
+              <h2 className="font-['Roba_Low'] text-[48px] sm:text-[32px] leading-[80%] tracking-[-2%] text-black uppercase text-center">
+                <span className="font-light">MOBILE </span>
+
+                <span className="font-black">ISN&apos;T</span>
                 <br />
-                <span className="font-black">ISN&apos;T A</span>
-                <br />
-                <span className="font-black">DEVICE,</span>
+                <span className="font-black">A DEVICE,</span>
                 <br />
                 <span className="font-black">IT&apos;S A</span>
                 <br />
