@@ -5,25 +5,25 @@ export default function Services() {
   const services = ["Web Design", "App Design", "Branding & Visual Identity"]
 
   return (
-    <section id='services' className="w-full py-16 md:py-24 lg:py-32" style={{ backgroundColor: "#C8D74B" }}>
+    <section id='services' className="w-full py-16 md:py-24 lg:py-32 " style={{ backgroundColor: "#C8D74B" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Services Container */}
-        <div className="w-full max-w-5xl mx-auto rounded-lg overflow-hidden" style={{ backgroundColor: "#0C570D" }}>
-          <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[400px] lg:min-h-[500px]">
+        <div className="w-full max-w-5xl mx-auto rounded-lg overflow-hidden " style={{ backgroundColor: "#0C570D" }}>
+          <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[200px] lg:min-h-[300px] p-6 lg:p-10 xl:p-14 gap-6">
             {/* Left Side - Image */}
             <div className="relative h-64 lg:h-full">
               <Image
                 src="/images/our-service.png"
                 alt="Person in yellow hoodie working on laptop"
                 fill
-                className="object-cover"
+                className="object-contain rounded-lg"
               />
             </div>
 
             {/* Right Side - Services Content */}
-            <div className="flex flex-col justify-center p-8 lg:p-12 xl:p-16">
+            <div className="flex flex-col justify-center">
               {/* Services Title */}
-              <h2 className="font-['RobaV0.5_Low_TRIAL'] font-bold text-[32px] sm:text-[48px] lg:text-[64px] leading-[85%] tracking-[-2%] text-white uppercase mb-8 lg:mb-12">
+              <h2 className="font-['Roba_Low'] font-bold text-[32px] sm:text-[48px] lg:text-[64px] leading-[85%] tracking-[-2%] text-white uppercase mb-8 lg:mb-12">
                 OUR SERVICES
               </h2>
 

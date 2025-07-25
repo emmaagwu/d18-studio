@@ -73,7 +73,7 @@ export default function Branding() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
         <div className="text-center lg:text-left mb-16 lg:mb-24">
-          <h2 className="font-['Roba_Low'] text-[48px] sm:text-[64px] md:text-[80px] lg:text-[96px] leading-[80px] tracking-[-2%] text-black uppercase">
+          <h2 className="font-['Roba_Low'] text-[48px] sm:text-[64px] md:text-[80px] lg:text-[96px] leading-[40px] sm:leading-[80px] tracking-[-2%] text-black uppercase">
             <span className="font-black">GOOD</span>
             <br />
             <span className="font-light">BRANDING</span>
@@ -99,6 +99,14 @@ export default function Branding() {
               reversed={index % 2 === 1}
             />
           ))}
+        </div>
+        {/* Extra Branding Project */}
+        <div className="md:hidden relative">
+            <Image src='/images/brand5.png' alt='Branding showcase with blue and green design elements' width={932} height={535} className='w-full h-auto object-cover rounded-lg mt-16' />
+        </div>
+
+        <div className="md:hidden relative">
+            <Image src='/images/brand6.png' alt='Branding showcase with blue and green design elements' width={932} height={535} className='w-full h-auto object-cover rounded-lg mt-16' />
         </div>
       </div>
     </section>
