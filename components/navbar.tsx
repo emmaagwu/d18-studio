@@ -228,6 +228,8 @@ export default function Navbar() {
               }}>
                 <a
                   href="https://www.facebook.com/share/1DzbqkVGjA/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-8 h-8 flex items-center justify-center text-black hover:text-gray-600 transition-colors duration-200"
                   aria-label="Facebook"
                 >
@@ -235,6 +237,8 @@ export default function Navbar() {
                 </a>
                 <a
                   href="https://www.instagram.com/d18_studio?igsh=azgyaXhieTR4Ymt6"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-8 h-8 flex items-center justify-center text-black hover:text-gray-600 transition-colors duration-200"
                   aria-label="Instagram"
                 >
@@ -242,6 +246,8 @@ export default function Navbar() {
                 </a>
                 <a
                   href="https://www.linkedin.com/company/d18-studio/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-8 h-8 flex items-center justify-center text-black hover:text-gray-600 transition-colors duration-200"
                   aria-label="LinkedIn"
                 >
@@ -249,6 +255,8 @@ export default function Navbar() {
                 </a>
                 <a
                   href="https://x.com/D18_Studio?t=GAmHYTwIniHKEF29p0L4ew&s=09"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-8 h-8 flex items-center justify-center text-black hover:text-gray-600 transition-colors duration-200"
                   aria-label="X (Twitter)"
                 >
