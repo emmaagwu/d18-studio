@@ -22,7 +22,7 @@ function BrandingItem({ title, description, imageSrc, imageAlt, reversed = false
 
       {/* Text Block */}
       <div className="w-full lg:w-[342px] lg:flex-shrink-0 space-y-[15px]">
-        <h3 className="font-['RobaV0.5_Low_TRIAL'] font-semibold text-[24px] sm:text-[28px] lg:text-[32px] leading-[92%] tracking-[0%] text-black uppercase">
+        <h3 className="font-['Roba_Low'] font-semibold text-[24px] sm:text-[28px] lg:text-[32px] leading-[92%] tracking-[0%] text-black uppercase">
           {title}
         </h3>
         <p
@@ -87,7 +87,7 @@ export default function Branding() {
           </h2>
         </div>
 
-        {/* Branding Projects */}
+        {/* Branding Projectns */}
         <div className="space-y-0">
           {brandingProjects.map((project, index) => (
             <BrandingItem
