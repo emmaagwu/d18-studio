@@ -227,28 +227,28 @@ export default function Navbar() {
                 transitionDelay: isMobileMenuOpen ? '800ms' : '0ms'
               }}>
                 <a
-                  href="#"
+                  href="https://www.facebook.com/share/1DzbqkVGjA/"
                   className="w-8 h-8 flex items-center justify-center text-black hover:text-gray-600 transition-colors duration-200"
                   aria-label="Facebook"
                 >
                   <Facebook className="w-5 h-5" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/d18_studio?igsh=azgyaXhieTR4Ymt6"
                   className="w-8 h-8 flex items-center justify-center text-black hover:text-gray-600 transition-colors duration-200"
                   aria-label="Instagram"
                 >
                   <Instagram className="w-5 h-5" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/d18-studio/"
                   className="w-8 h-8 flex items-center justify-center text-black hover:text-gray-600 transition-colors duration-200"
                   aria-label="LinkedIn"
                 >
                   <Linkedin className="w-5 h-5" />
                 </a>
                 <a
-                  href="#"
+                  href="https://x.com/D18_Studio?t=GAmHYTwIniHKEF29p0L4ew&s=09"
                   className="w-8 h-8 flex items-center justify-center text-black hover:text-gray-600 transition-colors duration-200"
                   aria-label="X (Twitter)"
                 >

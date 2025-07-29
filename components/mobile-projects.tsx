@@ -107,7 +107,7 @@ export default function MobileProjects() {
           </div>
 
           <div className="flex justify-center">
-            <MobileProjectCard isVideo={true} videoSrc="/videos/new-mobile-app-1.mp4" alt="Banking mobile app" isMobile={true} />
+            <MobileProjectCard isVideo={true} videoSrc="/videos/new-mobile-app-3.mp4" alt="Banking mobile app" isMobile={true} />
           </div>
 
           {/* Mobile App Cards - Single Column */}
