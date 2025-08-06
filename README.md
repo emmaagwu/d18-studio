@@ -5,7 +5,7 @@
 A modern, responsive website for **DB Studio** – a creative agency focused on delivering functional and efficient products.
 Built with **Next.js**, **TypeScript**, and **Tailwind CSS**.
 
-🚀 [**Live Demo**](https://d18-studio-eight.vercel.app/)
+🚀 [**Live Demo**](https://d18studio.com/)
 
 ---
 
